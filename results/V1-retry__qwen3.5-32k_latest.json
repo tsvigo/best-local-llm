@@ -1,0 +1,9 @@
+{
+  "model": "qwen3.5-32k:latest",
+  "task": "V1-retry-nothink",
+  "image": "images/v1_text.png",
+  "prompt": "Транскрибируй ВЕСЬ текст (think:false)",
+  "response": "Объявление  \nСобрание жильцов дома 12  \nсостоится 15 марта в 18:00  \nв актовом зале на втором этаже.  \n\nКонтакт: 8 (495) 123-45-67  \nКод домофона: 4821",
+  "thinking": "",
+  "note": "default think mode gave 0 chars + 135KB thinking twice; think:false transcribes perfectly"
+}
