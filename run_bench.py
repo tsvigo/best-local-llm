@@ -30,14 +30,14 @@ for model in cfg["models"]:
             continue
         print(f"[{model}] {t['id']} ...", flush=True)
         try:
-            resp, dt, raw = gen(model, t["prompt"], cfg["options"])
+            resp, think, dt, raw = gen(model, t["prompt"], cfg["options"])
             eval_ms = raw.get("eval_duration", 0) / 1e6
             eval_count = raw.get("eval_count", 0)
             tps = (eval_count / eval_ms * 1000) if eval_ms > 0 else 0
         except Exception as e:
-            resp, dt, tps, raw = f"<ERROR: {e}>", -1, 0, {"error": str(e)}
+            resp, think, dt, tps, raw = f"<ERROR: {e}>", "", -1, 0, {"error": str(e)}
         rec = {"model": model, "task": t["id"], "cat": t["cat"],
-               "prompt": t["prompt"], "response": resp,
+               "prompt": t["prompt"], "response": resp, "thinking": think,
                "wall_s": round(dt, 1), "tok_per_s": round(tps, 1)}
         fn = os.path.join(OUT, f"{t['id']}__{model.replace(':','_').replace('/','_')}.json")
         with open(fn, "w", encoding="utf-8") as f:
