@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "task": "C3",
+  "cat": "code",
+  "prompt": "Какая временная сложность этого фрагмента? Ответь одной строкой в формате O(...), затем одним предложением объясни почему:\n```python\nfor i in range(n):\n    for j in range(n):\n        print(i, j)\n```",
+  "response": "O(n²)  \nпотому что внешний цикл выполняется n раз, а внутри него внутренний цикл также выполняется n раз, в сумме получается n·n операций.",
+  "thinking": "We need to answer: \"Какая временная сложность этого фрагмента? Ответь одной строкой в формате O(...), затем одним предложением объясни почему:\" So we output something like:\n\nO(n^2)\n\nThen one sentence explanation in Russian. The code has two nested loops each from 0 to n-1, so total iterations n*n = n^2.\n\nThus answer: \"O(n^2) – потому что внутренний цикл выполняется n раз для каждого из n итераций внешнего цикла.\" That is fine.\n\nWe need one line in format O(...). Then a sentence. So output:\n\nO(n^2)\nпотому что внешний цикл выполняется n раз, а внутри него внутренний цикл также выполняется n раз, в сумме получается n·n операций.\n\nMake sure it's one line for complexity and then one sentence explanation. Probably separate lines: first line O(n^2), second line explanation. That should satisfy.",
+  "wall_s": 5.7,
+  "tok_per_s": 49.4
+}

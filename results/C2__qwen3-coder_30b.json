@@ -1,0 +1,10 @@
+{
+  "model": "qwen3-coder:30b",
+  "task": "C2",
+  "cat": "code",
+  "prompt": "Найди баг и верни ИСПРАВЛЕННЫЙ код без пояснений, только блок ```python:\n```python\ndef sum_first_n(n):\n    s = 0\n    for i in range(n):\n        s += i\n    return s\n```\nФункция должна возвращать сумму чисел от 1 до n включительно.",
+  "response": "```python\ndef sum_first_n(n):\n    s = 0\n    for i in range(1, n + 1):\n        s += i\n    return s\n```",
+  "thinking": "",
+  "wall_s": 2.8,
+  "tok_per_s": 26.4
+}

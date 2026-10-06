@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "task": "U3",
+  "cat": "russian",
+  "prompt": "Исправь все орфографические и стилистические ошибки, верни ТОЛЬКО исправленный текст: «Он одел пальто и вышел на улицу. Что бы не опаздать, он решил поторопится. В свободное время он любил играть в футбол.»",
+  "response": "Он надел пальто и вышел на улицу. Чтобы не опоздать, он решил поторопиться. В свободное время он любил играть в футбол.",
+  "thinking": "We need to correct all orthographic and stylistic errors in the given Russian text. Provide only corrected text.\n\nOriginal: «Он одел пальто и вышел на улицу. Что бы не опаздать, он решил поторопится. В свободное время он любил играть в футбол.»\n\nCorrections:\n\n- \"одел\" should be \"оделся\" or \"надел\". Usually \"одел пальто\" is incorrect; correct: \"надел пальто\".\n- \"Что бы не опаздать\" -> \"чтобы не опоздать\"\n- \"поторопится\" maybe okay but could be \"поторопиться\"? Actually \"поторопиться\" is fine. But \"решил поторопиться\" is okay.\n- \"В свободное время он любил играть в футбол.\" It's fine.\n\nAlso punctuation: after \"Он одел пальто и вышел на улицу.\" maybe no issue. The phrase \"чтобы не опоздать, он решил поторопиться.\" Good.\n\nThus corrected text:\n\n«Он надевал пальто и вышел на улицу. Чтобы не опоздать, он решил поторопиться. В свободное время он любил играть в футбол.»\n\nBut maybe better: \"Он одел пальто\" -> \"Он оделся в пальто\"? Actually \"одеться в пальто\" is correct but \"одел пальто\" is wrong. So we can say \"Он надевал пальто\". But \"надевал\" implies past continuous; \"надел пальто\" is more natural: \"Он надел пальто и вышел...\" That seems best.\n\nThus final corrected text:\n\n«Он надел пальто и вышел на улицу. Чтобы не опоздать, он решил поторопиться. В свободное время он любил играть в футбол.»\n\nCheck for any other errors: \"поторопиться\" is fine. \"В свободное время\" okay.\n\nThus output only corrected text.",
+  "wall_s": 9.9,
+  "tok_per_s": 50.7
+}

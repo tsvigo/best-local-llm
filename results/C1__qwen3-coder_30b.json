@@ -1,0 +1,10 @@
+{
+  "model": "qwen3-coder:30b",
+  "task": "C1",
+  "cat": "code",
+  "prompt": "Напиши на Python функцию flatten(lst), которая принимает вложенный список списков произвольной глубины (элементы — int или list) и возвращает плоский список int. Без использования внешних библиотек. Верни ТОЛЬКО код функции в блоке ```python, без пояснений.",
+  "response": "```python\ndef flatten(lst):\n    result = []\n    for item in lst:\n        if isinstance(item, list):\n            result.extend(flatten(item))\n        else:\n            result.append(item)\n    return result\n```",
+  "thinking": "",
+  "wall_s": 2.9,
+  "tok_per_s": 25.1
+}

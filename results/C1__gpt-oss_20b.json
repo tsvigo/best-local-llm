@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "task": "C1",
+  "cat": "code",
+  "prompt": "Напиши на Python функцию flatten(lst), которая принимает вложенный список списков произвольной глубины (элементы — int или list) и возвращает плоский список int. Без использования внешних библиотек. Верни ТОЛЬКО код функции в блоке ```python, без пояснений.",
+  "response": "```python\ndef flatten(lst):\n    flat = []\n    for item in lst:\n        if isinstance(item, list):\n            flat.extend(flatten(item))\n        else:\n            flat.append(item)\n    return flat\n```\n",
+  "thinking": "We need to write a Python function flatten(lst) that takes nested lists of arbitrary depth (elements are ints or lists). Return flat list of ints. No external libraries. Just code in python block.\n\nWe should handle recursion or stack. Should preserve order. Use recursion: iterate over elements, if isinstance(x,list): extend result with flatten(x), else append x. Ensure type int? Could check isinstance(x,int) but maybe other types not present. We'll just treat non-list as element to add.\n\nReturn list of ints.\n\nEdge cases: empty lists.\n\nImplement:\n\ndef flatten(lst):\n    flat=[]\n    for item in lst:\n        if isinstance(item, list):\n            flat.extend(flatten(item))\n        else:\n            flat.append(item)\n    return flat\n\nThat's fine. Use recursion. No external libs. Provide code only.",
+  "wall_s": 4.8,
+  "tok_per_s": 54.7
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "task": "C2",
+  "cat": "code",
+  "prompt": "Найди баг и верни ИСПРАВЛЕННЫЙ код без пояснений, только блок ```python:\n```python\ndef sum_first_n(n):\n    s = 0\n    for i in range(n):\n        s += i\n    return s\n```\nФункция должна возвращать сумму чисел от 1 до n включительно.",
+  "response": "```python\ndef sum_first_n(n):\n    s = 0\n    for i in range(1, n + 1):\n        s += i\n    return s\n```\n",
+  "thinking": "We need to find bug: function sum_first_n currently sums from 0 to n-1 inclusive, but should sum from 1 to n inclusive. So change loop range(1, n+1). Also maybe handle negative? But requirement only that returns sum of numbers from 1 to n inclusive.\n\nReturn s after loop. Provide corrected code block in python triple backticks. No explanation.",
+  "wall_s": 3.2,
+  "tok_per_s": 53.7
+}
