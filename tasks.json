@@ -4,7 +4,7 @@
     "gpt-oss:20b",
     "qwen3-coder:30b"
   ],
-  "options": {"temperature": 0, "num_ctx": 8192},
+  "options": {"temperature": 0, "num_ctx": 32768},
   "tasks": [
     {
       "id": "R1",
