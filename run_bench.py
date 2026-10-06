@@ -12,14 +12,15 @@ with open(os.path.join(HERE, "tasks.json"), encoding="utf-8") as f:
 
 def gen(model, prompt, options):
     payload = json.dumps({
-        "model": model, "prompt": prompt, "stream": False, "options": options
+        "model": model, "prompt": prompt, "stream": False, "options": options,
+        "think": True
     }).encode("utf-8")
     req = urllib.request.Request(BASE, data=payload, headers={"Content-Type": "application/json"})
     t0 = time.time()
-    with urllib.request.urlopen(req, timeout=300) as r:
+    with urllib.request.urlopen(req, timeout=600) as r:
         data = json.loads(r.read().decode("utf-8"))
     dt = time.time() - t0
-    return data.get("response", ""), dt, data
+    return data.get("response", ""), data.get("thinking", ""), dt, data
 
 only = sys.argv[1:]  # можно передать id задач для быстрого теста, напр. R1
 summary = []
