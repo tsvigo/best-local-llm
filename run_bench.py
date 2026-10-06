@@ -12,8 +12,7 @@ with open(os.path.join(HERE, "tasks.json"), encoding="utf-8") as f:
 
 def gen(model, prompt, options):
     payload = json.dumps({
-        "model": model, "prompt": prompt, "stream": False, "options": options,
-        "think": True
+        "model": model, "prompt": prompt, "stream": False, "options": options
     }).encode("utf-8")
     req = urllib.request.Request(BASE, data=payload, headers={"Content-Type": "application/json"})
     t0 = time.time()
