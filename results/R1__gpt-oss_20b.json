@@ -5,6 +5,6 @@
   "prompt": "В корзине лежит 5 яблок. Пятеро друзей взяли по одному яблоку каждый. Одно яблоко осталось в корзине. Как такое возможно? Ответь в 1-2 предложениях.",
   "response": "Пятеро друзей взяли по яблоку, но один из них не просто забрал фрукт — он вынул саму корзинку со всеми остальными яблоками. Поэтому в корзине осталось одно.",
   "thinking": "We need to answer in Russian, 1-2 sentences. The riddle: \"В корзине лежит 5 яблок. Пятеро друзей взяли по одному яблоку каждый. Одно яблоко осталось в корзине. Как такое возможно?\" Explanation: One of the friends took a basket with an apple? Or one friend didn't take an apple, but took the basket? Actually typical answer: The fifth friend took the basket with the remaining apple. So 5 apples, 5 friends each took one apple, but one apple remained because the last friend took the basket containing that apple. So answer: Один из друзей взял корзину с яблоком, а остальные по одному. Or \"Пятый друг забрал корзинку со всеми остальными яблоками\". Let's craft concise answer.\n\nWe need 1-2 sentences. Provide explanation. Let's produce:\n\n\"Пятеро друзей взяли по яблоку, но один из них не просто забрал яблоко – он вынул всю корзину с оставшимся яблоком. Поэтому в корзине осталось одно.\"\n\nThat's two sentences. Good.\n\nLet's answer in Russian.",
-  "wall_s": 33.5,
-  "tok_per_s": 67.9
+  "wall_s": 22.6,
+  "tok_per_s": 45.8
 }

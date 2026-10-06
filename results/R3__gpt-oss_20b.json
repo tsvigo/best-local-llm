@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "task": "R3",
+  "cat": "reasoning",
+  "prompt": "Верни РОВНО такой JSON без пояснений, без markdown, без пробелов в начале и конце: {\"a\":1,\"b\":[2,3]}",
+  "response": "{\"a\":1,\"b\":[2,3]}",
+  "thinking": "The user wants the exact JSON string: {\"a\":1,\"b\":[2,3]}. They want no explanation, no markdown, no spaces at beginning or end. So just output that string exactly.\n\nWe must ensure no leading/trailing whitespace. Just the JSON. No quotes around it? The example shows JSON with double quotes inside. We should output exactly: {\"a\":1,\"b\":[2,3]}. Ensure no newline before or after. Probably a single line.",
+  "wall_s": 3.5,
+  "tok_per_s": 45.5
+}
