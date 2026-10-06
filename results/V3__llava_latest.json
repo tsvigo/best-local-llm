@@ -1,0 +1,10 @@
+{
+  "model": "llava:latest",
+  "task": "V3",
+  "image": "images/v3_ui.png",
+  "prompt": "Где находится кнопка «Отмена» в окне «Настройки»? Опиши её положение и дай примерные координаты центра в шкале 0-1000.",
+  "response": " The image you've provided appears to be a screenshot of a computer interface, specifically showing a window with the title \"Настройки\" (Settings) in Russian. In this window, there is a button labeled \"Отмена\" (Cancel), which is typically located at the top right corner of the window.\n\nThe exact position of the \"Отмена\" button would depend on the specific software or operating system being used. However, in many graphical user interfaces (GUIs), the \"Отмена\" button is often placed near the top right corner to be easily accessible and visible.\n\nAs for the coordinates of the center of the window, they would typically be around 50% of the width and 50% of the height of the window from its top left corner. For example, if the window's dimensions are 800 pixels wide by 600 pixels tall, the center of the window might be approximately at (400, 300).\n\nPlease note that these are general guidelines and the actual position may vary depending on the specific software or operating system being used. ",
+  "thinking": "",
+  "wall_s": 8.4,
+  "tok_per_s": 33.3
+}
